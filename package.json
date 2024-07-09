@@ -5,7 +5,7 @@
     "start": "webpack serve",
     "start:open": "webpack serve --open",
     "build": "webpack --mode=production",
-    "lint": "eslint \"**/*.ts\""
+    "lint": "eslint"
   },
   "dependencies": {
     "three": "~0.164.1"
@@ -16,7 +16,7 @@
     "@types/webpack": "^5.28.5",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
-    "eslint": "^8.57.0",
+    "eslint": "^9.2.0",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2",
