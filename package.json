@@ -8,20 +8,20 @@
     "lint": "eslint \"**/*.ts\""
   },
   "dependencies": {
-    "three": "~0.164.1"
+    "three": "~0.176.0"
   },
   "devDependencies": {
-    "@types/node": "^20.12.8",
-    "@types/three": "^0.164.0",
+    "@types/node": "^22.15.21",
+    "@types/three": "^0.176.0",
     "@types/webpack": "^5.28.5",
-    "@typescript-eslint/eslint-plugin": "^7.1.1",
-    "@typescript-eslint/parser": "^7.1.1",
-    "eslint": "^8.57.0",
-    "ts-loader": "^9.5.1",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.27.0",
+    "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.2",
-    "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.2"
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
   }
 }
