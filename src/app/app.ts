@@ -26,7 +26,7 @@ export class App {
   private brick: Brick;
 
   constructor() {
-    this.brick = new Brick (100, ("red"));
+    this.brick = new Brick (100, "red");
     this.scene.add(this.brick);
 
     this.camera.position.set(200, 200, 200);
