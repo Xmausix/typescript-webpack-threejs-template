@@ -27,7 +27,7 @@ export class App {
   private brick: Brick;
 
   constructor() {
-    this.brick = new Brick(100, new Color("rgb(255,0,0)"));
+    this.brick = new Brick(100, new Color("red"));
     this.scene.add(this.brick);
 
     this.camera.position.set(200, 200, 200);
@@ -35,16 +35,27 @@ export class App {
 
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(window.devicePixelRatio);
-    this.renderer.setClearColor(new Color("rgb(0,0,0)"));
+    this.renderer.setClearColor(new Color("black"));
+
+    window.addEventListener("resize", () => this.adjustCanvasSize());
 
     this.renderer.setAnimationLoop(this.animate);
   }
 
-  private animate = () => {
-    this.timer.update();           
-    const delta = this.timer.getDelta(); 
+  private adjustCanvasSize() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
 
-    this.brick.rotateY(3 * delta); 
+    this.renderer.setSize(width, height);
+    this.camera.aspect = width / height;
+    this.camera.updateProjectionMatrix();
+  }
+
+  private animate = () => {
+    this.timer.update();
+    const delta = this.timer.getDelta();
+
+    this.brick.rotateY(3 * delta);
 
     this.renderer.render(this.scene, this.camera);
   };
