@@ -12,9 +12,4 @@ export class Brick extends Mesh {
 
     super(geometry, material);
   }
-
-  override rotateY(amount: number): this {
-    this.rotation.y += amount;
-    return this;
-  }
 }
