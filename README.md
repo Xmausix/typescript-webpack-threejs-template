@@ -2,7 +2,6 @@
 
 A minimalistic template for Three.js projects
 
-
 ## Installing dependencies
 
     npm i
@@ -18,4 +17,3 @@ A minimalistic template for Three.js projects
 ## Linting the code
 
     npm run lint
-
