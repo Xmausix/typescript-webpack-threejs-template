@@ -41,8 +41,8 @@ export class App {
   }
 
   private animate = () => {
-    this.timer.update();           // aktualizuje timer
-    const delta = this.timer.getDelta(); // czas od ostatniej klatki
+    this.timer.update();           
+    const delta = this.timer.getDelta(); 
 
     this.brick.rotation.y += 3 * delta;
 
