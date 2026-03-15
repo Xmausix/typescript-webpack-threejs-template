@@ -1,31 +1,31 @@
-import js from '@eslint/js';
-import tseslint from '@typescript-eslint/eslint-plugin';
-import tsparser from '@typescript-eslint/parser';
-import globals from 'globals';
+import js from "@eslint/js";
+import tseslint from "@typescript-eslint/eslint-plugin";
+import tsparser from "@typescript-eslint/parser";
+import globals from "globals";
 
 export default [
   js.configs.recommended,
 
   {
-    files: ['**/*.ts', '**/*.tsx'],
+    files: ["**/*.ts", "**/*.tsx"],
     languageOptions: {
       parser: tsparser,
       ecmaVersion: 2021,
-      sourceType: 'module',
+      sourceType: "module",
       globals: {
         ...globals.browser,
-        ...globals.node
-      }
+        ...globals.node,
+      },
     },
     plugins: {
-      '@typescript-eslint': tseslint
+      "@typescript-eslint": tseslint,
     },
     rules: {
-      'no-undef': 'off'
-    }
+      "no-undef": "off",
+    },
   },
 
   {
-    ignores: ['node_modules/**', 'dist/**']
-  }
+    ignores: ["node_modules/**", "dist/**"],
+  },
 ];
