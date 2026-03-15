@@ -3,6 +3,5 @@
     "target": "ES2022",
     "module": "ESNext",
     "strict": true,
-    "skipLibCheck": true
   }
 }
