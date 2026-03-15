@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
-    "lib": [
-      "es2015",
-      "dom"
-    ],
-    "target": "es6",
-    "noImplicitAny": true,
-    "module": "ESNext",
-    "strict": true
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true
   }
 }
