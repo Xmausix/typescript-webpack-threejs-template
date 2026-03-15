@@ -20,13 +20,13 @@ const config: WebpackConfiguration = {
   },
 
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/'
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/dist/",
   },
 
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: [".ts", ".js"],
   },
 
   module: {
