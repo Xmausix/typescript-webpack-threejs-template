@@ -20,11 +20,7 @@ export default [
     plugins: {
       '@typescript-eslint': tseslint
     },
-    extends: [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier"
-    ],
+    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
     rules: {
       'no-undef': 'off'
     }
