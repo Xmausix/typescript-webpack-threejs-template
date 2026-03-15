@@ -1,9 +1,4 @@
-import {
-  BoxGeometry,
-  Mesh,
-  MeshBasicMaterial,
-  ColorRepresentation
-} from "three";
+import { BoxGeometry, Mesh, MeshBasicMaterial, ColorRepresentation } from 'three';
 
 export class Brick extends Mesh {
   constructor(size: number, color: ColorRepresentation) {

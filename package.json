@@ -5,9 +5,12 @@
     "start": "webpack serve",
     "start:open": "webpack serve --open",
     "build": "webpack --mode=production",
-    "lint": "eslint \"**/*.ts\""
+    "lint": "eslint \"**/*.ts\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
+    "prettier": "^3.8.1",
     "three": "^0.183.2"
   },
   "devDependencies": {

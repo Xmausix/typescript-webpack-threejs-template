@@ -1,12 +1,5 @@
-import {
-  Color,
-  PerspectiveCamera,
-  Scene,
-  Vector3,
-  WebGLRenderer,
-  Clock,
-} from "three";
-import { Brick } from "./brick";
+import { Color, PerspectiveCamera, Scene, Vector3, WebGLRenderer, Clock } from 'three';
+import { Brick } from './brick';
 
 export class App {
   private readonly timer = new Clock();
@@ -21,13 +14,13 @@ export class App {
 
   private readonly renderer = new WebGLRenderer({
     antialias: true,
-    canvas: document.getElementById("main-canvas") as HTMLCanvasElement,
+    canvas: document.getElementById('main-canvas') as HTMLCanvasElement
   });
 
   private brick: Brick;
 
   constructor() {
-    this.brick = new Brick(100, new Color("rgb(255,0,0)"));
+    this.brick = new Brick(100, new Color('rgb(255,0,0)'));
     this.scene.add(this.brick);
 
     this.camera.position.set(200, 200, 200);
@@ -35,9 +28,9 @@ export class App {
 
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(window.devicePixelRatio);
-    this.renderer.setClearColor(new Color("rgb(0,0,0)"));
+    this.renderer.setClearColor(new Color('rgb(0,0,0)'));
 
-    window.addEventListener("resize", () => this.adjustCanvasSize());
+    window.addEventListener('resize', () => this.adjustCanvasSize());
 
     this.render();
   }
