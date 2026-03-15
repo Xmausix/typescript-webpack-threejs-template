@@ -1,5 +1,4 @@
 import {
-  Color,
   PerspectiveCamera,
   Scene,
   Vector3,
@@ -27,7 +26,7 @@ export class App {
   private brick: Brick;
 
   constructor() {
-    this.brick = new Brick(100, new Color("red"));
+    this.brick = new Brick (100, ("red"));
     this.scene.add(this.brick);
 
     this.camera.position.set(200, 200, 200);
@@ -35,7 +34,7 @@ export class App {
 
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(window.devicePixelRatio);
-    this.renderer.setClearColor(new Color("black"));
+    this.renderer.setClearColor("black");
 
     window.addEventListener("resize", () => this.adjustCanvasSize());
 

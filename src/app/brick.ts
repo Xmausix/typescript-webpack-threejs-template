@@ -4,7 +4,6 @@ import {
   MeshBasicMaterial,
   ColorRepresentation,
 } from "three";
-
 export class Brick extends Mesh {
   constructor(size: number, color: ColorRepresentation) {
     const geometry = new BoxGeometry(size, size, size);
