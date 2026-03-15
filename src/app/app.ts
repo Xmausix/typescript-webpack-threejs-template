@@ -44,7 +44,7 @@ export class App {
     this.timer.update();           
     const delta = this.timer.getDelta(); 
 
-    this.brick.rotation.y += 3 * delta;
+    this.brick.rotateY(3 * delta); 
 
     this.renderer.render(this.scene, this.camera);
   };
